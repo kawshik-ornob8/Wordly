@@ -1,0 +1,17 @@
+{
+  "name": "Wordly — English Vocabulary Flash Cards",
+  "short_name": "Wordly",
+  "description": "Fast, friendly English vocabulary flash cards with pronunciation.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8f7fc",
+  "theme_color": "#6555d9",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

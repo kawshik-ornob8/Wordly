@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f4ff">
+  <meta name="description" content="Learn English vocabulary with fast, interactive flash cards featuring definitions, examples, parts of speech, and audio pronunciation.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wordly — English vocabulary flash cards">
+  <meta property="og:description" content="Build your English vocabulary with definitions, examples, grammar labels, and pronunciation.">
+  <meta property="og:image" content="assets/wordly-social.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="./">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="words.json" as="fetch" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <title>Wordly — English Vocabulary Flash Cards</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LearningResource",
+      "name": "Wordly English Vocabulary Flash Cards",
+      "description": "Interactive English vocabulary flash cards with definitions, examples, parts of speech, and pronunciation.",
+      "educationalLevel": "Beginner to intermediate",
+      "learningResourceType": "Flash cards",
+      "inLanguage": "en"
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to vocabulary</a>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Wordly home">
+      <span class="brand-mark" aria-hidden="true">W</span>
+      <span>wordly</span>
+    </a>
+    <nav class="header-actions" aria-label="Primary navigation">
+      <button class="icon-button theme-toggle" type="button" aria-label="Use dark theme" title="Change theme">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42m0-12.72-1.42 1.42M7.06 16.94l-1.42 1.42M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg>
+      </button>
+      <button class="saved-button" type="button" data-filter-saved="true">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.47 6.04.88-4.37 4.25 1.03 6.01L12 16.77 6.6 19.61l1.03-6.01-4.37-4.25 6.04-.88L12 3Z"/></svg>
+        <span>Saved</span>
+        <span class="saved-count">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span aria-hidden="true">✦</span> A little English, every day</span>
+        <h1 id="hero-title">Make every new word <em>stick.</em></h1>
+        <p>Clear meanings, real examples, and instant pronunciation — all in one delightfully simple deck.</p>
+      </div>
+      <div class="hero-stats" aria-label="Learning statistics">
+        <div>
+          <strong class="word-count">0</strong>
+          <span>words</span>
+        </div>
+        <div>
+          <strong class="learned-count">0</strong>
+          <span>learned</span>
+        </div>
+        <div>
+          <strong class="streak-count">1</strong>
+          <span>day streak</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="study-shell" aria-labelledby="study-heading">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Your daily deck</span>
+          <h2 id="study-heading">Study one word at a time</h2>
+        </div>
+        <button class="shuffle-button" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16 3h5v5m0-5-6.5 6.5M4 7h3.5l9 10H21m0 0v-5M4 17h3.5l2.3-2.55"/></svg>
+          Shuffle
+        </button>
+      </div>
+
+      <div class="deck" aria-live="polite">
+        <button class="deck-arrow deck-prev" type="button" aria-label="Previous word">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+
+        <article class="flash-card" tabindex="0" aria-label="Vocabulary flash card. Press Space to reveal the answer.">
+          <div class="card-progress"><span></span></div>
+          <div class="card-topline">
+            <span class="card-number">01 / 24</span>
+            <button class="save-word" type="button" aria-label="Save this word">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.47 6.04.88-4.37 4.25 1.03 6.01L12 16.77 6.6 19.61l1.03-6.01-4.37-4.25 6.04-.88L12 3Z"/></svg>
+            </button>
+          </div>
+          <div class="card-question">
+            <span class="part-badge">noun</span>
+            <div class="word-line">
+              <h3 class="current-word">serendipity</h3>
+              <button class="speak-button" type="button" aria-label="Play pronunciation">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M11 5 6.5 9H3v6h3.5L11 19V5Zm4.5 4a4.5 4.5 0 0 1 0 6m2.5-9a8 8 0 0 1 0 12"/></svg>
+              </button>
+            </div>
+            <span class="pronunciation">/ˌser.ənˈdɪp.ə.ti/</span>
+          </div>
+          <div class="tap-hint">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14m-5-5 5 5 5-5"/></svg>
+            Tap to reveal
+          </div>
+          <div class="card-answer" hidden>
+            <span class="answer-label">Definition</span>
+            <p class="definition"></p>
+            <span class="answer-label">Example</span>
+            <p class="example"></p>
+            <div class="synonyms"></div>
+          </div>
+        </article>
+
+        <button class="deck-arrow deck-next" type="button" aria-label="Next word">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+
+      <div class="study-actions">
+        <button class="study-button review-button" type="button">
+          <span aria-hidden="true">↻</span>
+          Review again
+        </button>
+        <button class="study-button reveal-button" type="button">
+          Reveal answer
+          <span class="key-hint">Space</span>
+        </button>
+        <button class="study-button know-button" type="button">
+          I know this
+          <span aria-hidden="true">✓</span>
+        </button>
+      </div>
+      <p class="keyboard-help">Use <kbd>←</kbd> <kbd>→</kbd> to move and <kbd>Space</kbd> to reveal</p>
+    </section>
+
+    <section class="library" aria-labelledby="library-heading">
+      <div class="section-heading library-title">
+        <div>
+          <span class="section-kicker">Explore the library</span>
+          <h2 id="library-heading">Find your next word</h2>
+        </div>
+        <span class="result-count" aria-live="polite">Showing 0 words</span>
+      </div>
+
+      <div class="search-row">
+        <label class="search-box">
+          <span class="sr-only">Search words, definitions, or examples</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.15A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"/></svg>
+          <input type="search" placeholder="Search a word or meaning…" autocomplete="off">
+          <span class="search-shortcut">⌘ K</span>
+        </label>
+        <button class="random-button" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h3.5l9 10H21m0 0v-5m0 5h-5M4 17h3.5l9-10H21m0 0v5m0-5h-5"/></svg>
+          Surprise me
+        </button>
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-chips" role="group" aria-label="Filter by part of speech">
+          <button class="filter-chip active" type="button" data-part="all">All</button>
+          <button class="filter-chip" type="button" data-part="noun">Nouns</button>
+          <button class="filter-chip" type="button" data-part="pronoun">Pronouns</button>
+          <button class="filter-chip" type="button" data-part="verb">Verbs</button>
+          <button class="filter-chip" type="button" data-part="adjective">Adjectives</button>
+          <button class="filter-chip" type="button" data-part="adverb">Adverbs</button>
+        </div>
+        <select class="sort-select" aria-label="Sort words">
+          <option value="az">A to Z</option>
+          <option value="za">Z to A</option>
+          <option value="saved">Saved first</option>
+        </select>
+      </div>
+
+      <div class="word-grid"></div>
+
+      <div class="empty-state" hidden>
+        <span aria-hidden="true">⌕</span>
+        <h3>No matching words</h3>
+        <p>Try another search or choose a different word type.</p>
+        <button type="button">Clear filters</button>
+      </div>
+
+      <button class="load-more" type="button">Show more words</button>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#">
+      <span class="brand-mark" aria-hidden="true">W</span>
+      <span>wordly</span>
+    </a>
+    <p>Small words. Big worlds. <span aria-hidden="true">✦</span></p>
+    <p>Built for curious minds.</p>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <section class="noscript-message">
+      <h2>JavaScript is needed for the interactive flash cards</h2>
+      <p>You can still find vocabulary definitions through the page metadata, but audio, search, and study progress need JavaScript enabled.</p>
+    </section>
+  </noscript>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
