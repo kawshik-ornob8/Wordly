@@ -27,7 +27,10 @@ Then open `http://127.0.0.1:4173/`.
 
 ## Before publishing
 
-Replace `https://example.com/` in `index.html`, `robots.txt`, and `sitemap.xml` with the final website address. Upload the complete folder to any static host such as Netlify, Cloudflare Pages, GitHub Pages, or traditional web hosting.
+The canonical URL, crawler files, and social metadata are configured for
+`https://wordly.kawshik.dev/`. Update them together if the domain changes.
+Upload the complete folder to any static host such as Netlify, Cloudflare Pages,
+GitHub Pages, or traditional web hosting.
 
 ## Included features
 
