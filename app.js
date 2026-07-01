@@ -84,10 +84,6 @@
     $$(".word-count").forEach(el => { el.textContent = words.length.toLocaleString(); });
     $(".learned-count").textContent = learned.size.toLocaleString();
     $(".saved-count").textContent = saved.size.toLocaleString();
-
-    const today = new Date().toISOString().slice(0, 10);
-    const lastVisit = localStorage.getItem("wordly-visit");
-    if (lastVisit !== today) localStorage.setItem("wordly-visit", today);
   }
 
   function renderDeck(animate = false) {
